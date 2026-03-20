@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pavan Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <h2 class="logo">Pavan.</h2>
+
+  <nav>
+    <a onclick="showTab('about')">About</a>
+    <a onclick="showTab('skills')">Skills</a>
+    <a onclick="showTab('experience')">Experience</a>
+    <a onclick="showTab('education')">Education</a>
+    <a onclick="showTab('certifications')">Certifications</a>
+    <a onclick="showTab('awards')">Awards</a>
+    <a onclick="showTab('languages')">Languages</a>
+    <a onclick="showTab('contact')">Contact</a>
+  </nav>
+
+  <div class="nav-buttons">
+    <a href="https://www.linkedin.com/in/pavanreddy07/">LinkedIn</a>
+    <a href="https://github.com/PowerBIAnalyst">GitHub</a>
+    <a href="assets/resume.pdf" class="resume-btn">Resume ↓</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+
+  <div class="hero-left">
+    <div class="badge">Power BI • Data • Automation</div>
+
+    <h1>Hi, I'm <span>Pavan Reddy</span></h1>
+
+    <p class="desc">
+      Results-driven BI Analyst with 2.7+ years of experience in Power BI, DAX, SQL, and Power Automate.
+      Skilled in transforming complex data into actionable insights and delivering business value.
+    </p>
+
+    <div class="hero-buttons">
+      <button onclick="showTab('experience')" class="primary">View Experience</button>
+      <button onclick="showTab('contact')" class="secondary">Contact Me</button>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="card">
+      <div class="profile">
+        <img src="assets/profile.jpg">
+        <div>
+          <h3>Pavan Reddy</h3>
+          <p>BI Analyst</p>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div><h3>2.7+</h3><p>Experience</p></div>
+        <div><h3>PL-300</h3><p>Certified</p></div>
+        <div><h3>PL-500</h3><p>Certified</p></div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- TAB CONTENT -->
+<div class="content-area">
+
+  <!-- ABOUT -->
+  <div id="about" class="tab active">
+    <h2>About</h2>
+    <p>
+    Results-driven Power BI Developer with 2.7+ years of experience in designing interactive dashboards, data modeling, and business intelligence solutions. Proficient in Power BI, DAX, Power Query (M), SQL, and Power Automate, with a strong focus on transforming complex data into actionable insights. Experienced in working with Azure DevOps data, incident management, and software license management, ensuring high system uptime and operational efficiency. Proven ability to collaborate with clients, stabilize critical projects, and deliver impactful solutions that improve decision-making and reduce manual effort. Certified in PL-300 and PL-500, with a continuous learning mindset and a passion for building scalable BI solutions.
+    </p>
+  </div>
+
+  <!-- SKILLS -->
+  <div id="skills" class="tab">
+    <h2>Professional Skills</h2>
+    <ul>
+      <li>Data Visualization & Reporting: Expertise in designing dynamic dashboards and reports using Power BI to provide actionable business insights.</li>
+      <li>Process Automation: Skilled in developing and optimizing Power Automate flows to streamline repetitive business tasks and improve efficiency.</li>
+      <li>Data Management & SQL: Proficient in writing SQL queries for data extraction, transformation, and validation across multiple data sources.</li>
+      <li>Incident & License Management: Experienced in handling license provisioning, incident tracking, and resolution with a focus on minimal downtime.</li>
+      <li>Client & Stakeholder Communication: Strong ability to manage client expectations, gather requirements, and deliver solutions aligned with business goals.</li>
+    </ul>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div id="experience" class="tab">
+    <h2>Professional Experience</h2>
+
+    <h3>Accenture – Packaged Application Development Associate (Aug 2023 - Feb 2025)</h3>
+    <p><b>Project: Refresh Tracker</b></p>
+    <ul>
+      <li>Designed and implemented a consolidated reporting framework in Power BI, utilizing SharePoint Lists as the central data collection source.</li>
+      <li>Developed and maintained an automated Deployment Tracker dashboard monitoring ticket status and migration success rates across Dev-UAT-Prod, reducing manual checks by 60%.</li>
+      <li>Collaborated with clients and stakeholders to stabilize a disrupted project in 4 weeks, earning formal recognition for impact.</li>
+      <li>Re-engineered legacy Power Automate flows to match new business logic, increasing workflow accuracy by 40%.</li>
+      <li>Managed license provisioning and handled 300+ incidents monthly, ensuring 99.9% system uptime and rapid resolution.</li>
+    </ul>
+
+    <h3>Accenture – Packaged Application Development Analyst (Mar 2025 - Mar 2026)</h3>
+    <p><b>Project: ADO Analysis Report</b></p>
+    <ul>
+      <li>Connected and modelled raw sprint work items from Azure DevOps to Power BI, creating a single source of truth for project status.</li>
+      <li>Designed and deployed interactive dashboards to track core project metrics, including Team Velocity, Sprint Burndown, and Cycle Time.</li>
+      <li>Leveraged Power Query (M) to transform complex task hierarchies, ensuring accurate categorization and aggregation of work activity.</li>
+    </ul>
+  </div>
+
+  <!-- EDUCATION -->
+  <div id="education" class="tab">
+    <h2>Education</h2>
+    <p>MCA – Adikavi Nannaya University, Rajahmundry (2024–2026)</p>
+    <p>BSc – Aditya Degree College, Kakinada (2020–2023)</p>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div id="certifications" class="tab">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Microsoft Power BI Data Analyst Associate – PL-300</li>
+      <li>Microsoft Power Automate RPA Developer Associate – PL-500</li>
+      <li>Build Your Own Static Website from NXTWAVE</li>
+      <li>Build Your Own Responsive Website from NXTWAVE</li>
+    </ul>
+  </div>
+
+  <!-- AWARDS -->
+  <div id="awards" class="tab">
+    <h2>Awards & Honors</h2>
+    <ul>
+      <li>Cloud First Thank You Recognition – Appreciated for consistent contributions and commitment to delivering client value.</li>
+      <li>Microsoft Account Delivery Excellence – Recognized for strengthening client relationships and consistently meeting delivery metrics.</li>
+      <li>Multi-skilled Champion – Honored in FY25 for demonstrating breadth and depth across multiple technologies.</li>
+      <li>Microsoft Account SPOTLIGHT Awards – Awarded in Aug’24, Nov’24, Feb’25, Apr’25 and June’25.</li>
+      <li>EUSE STAR Team Recognition – Appreciated for exceptional teamwork and collaboration.</li>
+    </ul>
+  </div>
+
+  <!-- LANGUAGES -->
+  <div id="languages" class="tab">
+    <h2>Languages</h2>
+    <p>Telugu: Native language</p>
+    <p>English: Fluent</p>
+    <p>Hindi: Fluent</p>
+  </div>
+
+  <!-- CONTACT -->
+  <div id="contact" class="tab">
+    <h2>Contact</h2>
+    <p>Email: pavanreddy7064@gmail.com</p>
+    <p>Phone: +91-7075858187</p>
+    <p>Location: Kakinada, Andhra Pradesh</p>
+
+    <a href="assets/resume.pdf" class="btn" download>Download Resume</a>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
